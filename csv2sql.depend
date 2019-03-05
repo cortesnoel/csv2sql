@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1551729206 source:c:\users\noel cortes\documents\c_workplace\headstart_c\csv2sql\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
