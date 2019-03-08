@@ -1,3 +1,5 @@
 csv2sql.layout
-main.o
+csv2sql.c
 csv2sql.exe
+main.o
+main.exe
