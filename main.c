@@ -137,7 +137,7 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
                     repeat++;
                     break;
                 } else {
-                    if (t1[0] == 'U' || t1[0] == 'D') { /*Temp fix: If Update has repeats, flag incorrectFormat*/
+                    if (t1[0] == 'U') { /*Temp fix: If Update has repeats, flag incorrectFormat*/
                         *incorrectFormat = 1;
                         return;
                     } else {
@@ -155,7 +155,7 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
                     repeat++;
                     break;
                 } else {
-                    if (t1[0] == 'U' || t1[0] == 'D') { /*Temp fix: If Update has repeats, flag incorrectFormat*/
+                    if (t1[0] == 'U') { /*Temp fix: If Update has repeats, flag incorrectFormat*/
                         *incorrectFormat = 1;
                         return;
                     } else {
