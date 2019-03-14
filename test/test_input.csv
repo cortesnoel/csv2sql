@@ -1,0 +1,45 @@
+I,-,student,-,major,grade,-,'english',11,-
+I,-,store,-,'AX','sweater','jeans',-
+I,-,food,-,'chicken','rice','beans','corn','salad',-
+I,-,weather,-,degrees,-,'sunny',-
+I,-,color,-,'red','blue','green',-
+I,-,shop,-,'shoes',-
+I,-,tools,-,'wrench','hammer','drill',-
+I,-,gear,-,'widget',-
+I,-,auto,-,motrocycle,car,truck,boat,-,'harley','volvo','dodge ram','yacht',-
+I,-,canine,-,'wolf','hound','beagle',-
+I,-,electronics,-,'computer','iphone','imac','robots',-
+I,-,jumper,-,'cables',-
+I,-,cocktails,-,'jack&coke',-
+I,-,watches,-,'movado','bulova','rolex',-
+I,-,jewelry,-,'gold','silver','rose gold',-
+U,-,television,-,favorite_show,-,'Friends',-,refcolumn,-,refvalue,-
+U,-,camera,-,Nikon,-,'560s',-,refcolumn,-,refvalue,-
+U,-,cats,-,furry,-,'TRUE',-,refcolumn,-,refvalue,-
+U,-,feline,-,lion,-,'mountain',-,refcolumn,-,refvalue,-
+U,-,wood,-,oak,-,'birch',-,refcolumn,-,refvalue,-
+U,-,trees,-,rings,-,100,-,refcolumn,-,refvalue,-
+U,-,ants,-,red,-,'bite',-,refcolumn,-,refvalue,-
+U,-,bees,-,sting,-,4,-,refcolumn,-,refvalue,-
+U,-,flowers,-,pollen,-,'medium',-,refcolumn,-,refvalue,-
+U,-,plants,-,leaves,-,3,-,refcolumn,-,refvalue,-
+U,-,animals,-,legs,-,4,-,refcolumn,-,refvalue,-
+U,-,grass,-,blades,-,'long',-,refcolumn,-,refvalue,-
+U,-,shampoo,-,scent,-,'coconut',-,refcolumn,-,refvalue,-
+U,-,spa,-,price,-,'high',-,refcolumn,-,refvalue,-
+U,-,recipe,-,spicy,-,'hot',-,refcolumn,-,refvalue,-
+D,-,restaurant,-,name,-,'burger king',-
+D,-,sport,-,team,-,FALSE,-
+D,-,beach,-,crowd,-,'many',-
+D,-,mountain,-,elevation,-,'low',-
+D,-,landmark,-,age,-,'new',-
+D,-,park,-,pay,-,'high',-
+D,-,paint,-,lead,-,TRUE,-
+D,-,graphics,-,pixels,-,'low',-
+D,-,glass,-,clarity,-,'opaque',-
+D,-,mineral,-,durability,-,'soft',-
+D,-,liquid,-,viscosity,-,'thick',-
+D,-,fish,-,scales,-,'hard',-
+D,-,shark,-,teeth,-,'many',-
+D,-,games,-,boring,-,'TRUE',-
+D,-,chemical,-,acidic,-,5,-

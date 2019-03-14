@@ -21,13 +21,17 @@ int main()
     char full[850];
     int elaborate = 0;
     int incorrectFormat = 0;
+    int lineNumber = 0;
 
-    puts("Enter in SQL data:\n");
+    puts("\n/******Enter in SQL data:******/\n");
     while (fgets(full, sizeof(full), stdin) != NULL) {
         // printf("inside while loop\n");
+        lineNumber++;
+
         populate(full, dml, table, column, data, refColumn, refData, &elaborate, &incorrectFormat);
         if (incorrectFormat != 0) {
-            printf("Error: Incorrect Format = %i", incorrectFormat);
+            fprintf(stderr, "Error: Data input is of an incorrect format : %d\n", lineNumber);
+            // printf("Error: Incorrect Format = %i", incorrectFormat);
             return 2;
         }
         // printf("%s %s %s %s %s %s\n", dml, table, column, data, refColumn, refData);
@@ -46,19 +50,20 @@ int main()
                 del(dml, table, column, data);
                 break;
             default:
-                printf("End of data.");
+                printf("\n/******END OF DATA******/\n");
                 return 0;
         }
     }
 
-    // printf("end of main\n");
-    return 2;
+    printf("\n/******END OF DATA******/\n");
+    return 0;
 }
 
 void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[], char t6[],
                     int *elaborate, int *incorrectFormat) {
     char *token = strtok(total, ",");
     int counter = 0, repeat = 0, dashBreaks = 0;
+    int columnCount = 0, valueCount = 0;
     *elaborate = 0, *incorrectFormat = 0;
     // printf("elaborate = %d\n", *elaborate);
 
@@ -67,7 +72,8 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
             repeat = 0;
             counter++;
             dashBreaks++;
-            if (dashBreaks > 1) {
+            if (dashBreaks > 1 ||
+                ((*elaborate == 1 && counter == 4) && (columnCount != valueCount))) {
                 *incorrectFormat = 1;
                 return;
             }
@@ -88,8 +94,7 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
                 } else if (strchr(token, 'D')) {
                     strcpy(t1, "DELETE");
                 } else {
-                    printf("DML Error\n");
-                    strcpy(t1, token);
+                    *incorrectFormat = 1;
                     return;
                 }
                 break;
@@ -109,6 +114,8 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
                             strcat(t3, ",");
                             strcat(t3, token);
                             *elaborate = 1;
+                            columnCount++;
+                            // printf("Column count: %d\n", columnCount);
                             // printf("elaborate = %d\n", *elaborate);
                             break;
                         }
@@ -125,6 +132,8 @@ void populate(char total[], char t1[], char t2[], char t3[], char t4[], char t5[
                         } else {
                             strcat(t4, ",");
                             strcat(t4, token);
+                            valueCount++;
+                            // printf("Value count: %d\n", valueCount);
                             break;
                         }
                     }
