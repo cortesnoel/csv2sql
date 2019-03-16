@@ -1,3 +1,4 @@
+# csv2sql
 This program is a C-based command-line tool for constructing basic DML SQL queries from .csv.
 
 # Motivation
@@ -11,7 +12,7 @@ It also doesn't hurt to have a tool that can build testable mock data sets quick
 ![Alt text](/img/cmd.jpg?raw=true "Running Command Line")
 3. Enter command in terminal to generate program executable: gcc main.c -o csv2sql.exe
 ![Alt text](/img/compile.jpg?raw=true "Compiling csv2sql Tool")
-4. Enter command in terminal to run csv2sql program: csv2sql
+4. Enter command in terminal to run csv2sql program: csv2sql                          
 ![Alt text](/img/run.jpg?raw=true "Running csv2sql Tool")
  
 # Formatting Rules & Examples:
