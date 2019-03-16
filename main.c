@@ -31,7 +31,7 @@ int main()
         populate(full, dml, table, column, data, refColumn, refData, &elaborate, &incorrectFormat);
         if (incorrectFormat != 0) {
             fprintf(stderr, "Error: Data input is of an incorrect format : %d\n", lineNumber);
-            // printf("Error: Incorrect Format = %i", incorrectFormat);
+            fprintf(stderr, "\n\nPROGRAM TERMINATED\n\n");
             return 2;
         }
         // printf("%s %s %s %s %s %s\n", dml, table, column, data, refColumn, refData);
