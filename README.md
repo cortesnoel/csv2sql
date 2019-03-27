@@ -33,14 +33,14 @@ In addition to above examples:
 2. Datatype must be specified in .csv (example: 'dataExample')
 
 # Testing
-/***See example files in csv2sql Test directory***/
-1. To test csv2sql.exe with bigger sample, enter command in terminal: csv2sql < test/test_input.csv
+*See example files in csv2sql Test directory*
+1. To test csv2sql.exe with bigger sample, enter command in terminal: **csv2sql < test/test_input.csv**
 2. To test using your own data, please follow directions below.
 
 # How to use?
 1. Install csv2sql tool (see installation directions)
 3. Verify your input file only contains accepted .csv data format (see formatting rules above)
-2. Run command to generate .sql file from .csv: csv2sql < your_input_file.csv > your_output_file.sql
+2. Run command to generate .sql file from .csv: **csv2sql < your_input_file.csv > your_output_file.sql**
 3. Verify output .sql file in your local directory
 
 # Contribute
