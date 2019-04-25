@@ -1,3 +1,4 @@
+# csv2sql
 This program is a C-based command-line tool for constructing basic DML SQL queries from .csv.
 
 # Motivation
@@ -11,7 +12,7 @@ It also doesn't hurt to have a tool that can build testable mock data sets quick
 ![Alt text](/img/cmd.jpg?raw=true "Running Command Line")
 3. Enter command in terminal to generate program executable: gcc main.c -o csv2sql.exe
 ![Alt text](/img/compile.jpg?raw=true "Compiling csv2sql Tool")
-4. Enter command in terminal to run csv2sql program: csv2sql
+4. Enter command in terminal to run csv2sql program: csv2sql                          
 ![Alt text](/img/run.jpg?raw=true "Running csv2sql Tool")
  
 # Formatting Rules & Examples:
@@ -32,14 +33,14 @@ In addition to above examples:
 2. Datatype must be specified in .csv (example: 'dataExample')
 
 # Testing
-/***See example files in csv2sql Test directory***/
-1. To test csv2sql.exe with bigger sample, enter command in terminal: csv2sql < test/test_input.csv
+*See example files in csv2sql Test directory*
+1. To test csv2sql.exe with bigger sample, enter command in terminal: **csv2sql < test/test_input.csv**
 2. To test using your own data, please follow directions below.
 
 # How to use?
 1. Install csv2sql tool (see installation directions)
 3. Verify your input file only contains accepted .csv data format (see formatting rules above)
-2. Run command to generate .sql file from .csv: csv2sql < your_input_file.csv > your_output_file.sql
+2. Run command to generate .sql file from .csv: **csv2sql < your_input_file.csv > your_output_file.sql**
 3. Verify output .sql file in your local directory
 
 # Contribute
